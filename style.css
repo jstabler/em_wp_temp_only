@@ -171,7 +171,7 @@ body {background: #3e322b;}
 .specialNav { height: 100px; margin-top: 101px}
 .specialNav ul li {display: inline-block}
 .post { /*background:#cca880;*/  width:573px; float: left; margin: 5px; color:#554a43}
-.searchPage {/*background:#cca880;*/  width:573px; float: left; margin: 18px color:#554a43}
+.searchPage {/*background:#cca880;*/  width:573px; float: left; margin: 18px ;color:#554a43}
 .entry {margin: 18px}
 h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px}
 
@@ -188,6 +188,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .menu li ul {margin-top: 13px}
 .menu li ul li {margin: 2px}
 .menu a {color:#fafaf1; text-decoration: none; text-transform:uppercase;} 
+.mobileCircle {display: none;}
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
 .cowSide { height: 280px; background: url(images/sidebar_redcow.png) no-repeat 31px 50px; }
 #footer {
@@ -276,9 +277,19 @@ ol.commentlist li.thread-odd {}
 {
 		#page-wrap {width: 100%; margin: 0}
 	.post {width: 100%}
-	#sidebar {width: 100%; background: none #d64639; margin: 0}
+	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0;}
+
+	.menu-mainmenu-container {display: none;}
+	.hideMenu {display: block}
+	
+	body {margin-top: -50px}
+	.mobileCircle {
+		cursor: pointer;
+		display: block; margin: 0 auto -35px auto; width: 80px; padding: 30px 0; background: #d64639; border-radius: 50%;
+		text-align: center; vertical-align: middle; font: 18px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #b3382e}
 	.cowSide {display: none}
 	#sLabel {display: none}
+
 }	
 @media screen and (max-device-width: 480px) {
 	
