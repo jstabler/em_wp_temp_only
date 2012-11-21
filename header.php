@@ -108,7 +108,7 @@
 <body <?php body_class(); ?>>
 	
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
-
+<div id="container">
 		<header id="header">
 			<?php get_search_form(); ?>
 			<a href="#" class="menuLink">Download Cafe Menu</a>

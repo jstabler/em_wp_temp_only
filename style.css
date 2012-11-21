@@ -158,7 +158,8 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 }
 body {background: #3e322b url(images/background.png);}
 #page-wrap {width: 970px; margin: 0 auto; background: #fafaf1;}
-#header {background: #fafaf1 url('images/header_bg.png'); height: 204px; margin: 0; padding: 8px 8px}
+#container {width: 850px; margin: 0 auto;}
+#header {background: #fafaf1 url('images/header_bg.png'); height: 186px; margin: 0; padding: 8px 8px}
 #headerLogo {background: url(images/enzo_logo.png) no-repeat; width:242px; height:69px;text-indent: -9999px}
 .menuLink, .menuLink a {
 	font: 10px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color:#b3382e;
@@ -168,7 +169,7 @@ body {background: #3e322b url(images/background.png);}
 .emailLink {
 	background: url(images/icon_email.png); width: 75px; height: 68px;
 	text-indent: -9999px; float: right; margin: 33px -99px 0 0}
-.specialNav { height: 100px; margin-top: 101px}
+.specialNav { height: 100px; margin-top: 100px}
 .specialNav ul li {display: inline-block}
 .post { /*background:#cca880;*/  width:573px; float: left; margin: 5px; color:#554a43}
 .searchPage {/*background:#cca880;*/  width:573px; float: left; margin: 18px ;color:#554a43}
@@ -182,7 +183,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 #meta {}
 .postmetadata {}
 
-#sidebar {background: #d64639 url('images/sidebar_bottom.png') no-repeat center bottom; width: 260px; float: left; margin: 5px}
+#sidebar {background: #d64639 url('images/sidebar_bottom.png') no-repeat center bottom; width: 260px; float: left; margin: 5px 0 0 0;}
 .menu {  text-align: center; color:#fafaf1; margin: 25px 5px; font-size: 20px;}
 .menu li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px}
 .menu li ul {margin-top: 13px}
@@ -192,7 +193,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
 .cowSide { height: 280px; background: url(images/sidebar_redcow.png) no-repeat 31px 50px; }
 #footer {
-	background:#a1815e; height: 200px; margin: 50px 0;
+	background:#a1815e; height: 200px; margin: 250px 0;
 	text-transform: uppercase; color: #816448
 	}
 
