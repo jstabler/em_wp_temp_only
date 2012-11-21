@@ -156,7 +156,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
     font-style: normal;
 
 }
-body {background: #3e322b;}
+body {background: #3e322b; margin: 0 auto}
 #page-wrap {width: 960px; margin: 0 auto; background: #fafaf1;}
 #header {background: #fafaf1 url('images/header_bg.png'); height: 204px; margin: 0; padding: 8px 8px}
 #headerLogo {background: url(images/enzo_logo.png) no-repeat; width:242px; height:69px;text-indent: -9999px}
