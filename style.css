@@ -198,10 +198,11 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .mobileCircle {display: none;}
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
 .cowSide { height: 280px; background: url(images/sidebar_redcow.png) no-repeat 31px 50px; }
-#footer {
+#footer {position: relative;
 	background:#a1815e; height: 200px; margin: 250px 0;
-	text-transform: uppercase; color: #816448
+	text-transform: uppercase; color: #816448; text-align:center; 
 	}
+ #footer-content { position: absolute; bottom: 0; text-align: center; margin: 0 0 10px 350px; }
 
 .navgation {}
 .next-posts {}

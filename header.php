@@ -117,6 +117,7 @@
 			<div class="specialNav">
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/"><h1 id="headerLogo"><?php bloginfo('name'); ?></h1></a></li>
+                <a href="images/navbar.png"></a>
 				<li><a href="<?php echo get_option('storehours'); ?>/"><h1 id="headerStore"><?php bloginfo('name'); ?></h1></a></li>
 				<li><a href="<?php echo get_option('howtogethere'); ?>/"><h1 id="headerGethere"><?php bloginfo('name'); ?></h1></a></li>
 				<li><a href="<?php echo get_option('currentspecials'); ?>/"><h1 id="headerCurrentspecials"><?php bloginfo('name'); ?></h1></a></li>

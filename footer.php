@@ -1,9 +1,14 @@
 
 </div>
-		<footer id="footer" class="source-org vcard copyright">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | All Rights Reserved.</small>
-		</footer>
+		<div id="footer">
 
+  <div id="footer-content"><small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | All Rights Reserved.</small></div>
+</div>
+        
+        
+        
+        
+  
 	</div>
 
 	<?php wp_footer(); ?>
