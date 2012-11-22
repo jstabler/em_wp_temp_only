@@ -177,8 +177,7 @@ body {background: #3e322b url(images/background.png);}
 	text-indent: -9999px; float: right; margin: 33px -99px 0 0}
 .specialNav { height: 100px; margin-top: 100px}
 .specialNav ul li {display: inline-block}
-.post { /*background:#cca880;*/  width:573px; float: left; margin: 5px; color:#554a43}
-.searchPage {/*background:#cca880;*/  width:573px; float: left; margin: 18px ;color:#554a43}
+.post, .searchPage { /*background:#cca880;*/  width:573px; float: left; margin: 5px; color:#554a43}
 .entry {margin: 18px}
 h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px}
 
@@ -202,7 +201,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 	background:#a1815e; height: 200px; margin: 250px 0;
 	text-transform: uppercase; color: #816448; text-align:center; 
 	}
- #footer-content { position: absolute; bottom: 0; text-align: center; margin: 0 0 10px 350px; }
+ #footer-content { position: absolute; bottom: 10px; text-align: center; margin: 0; width: 100% }
 
 .navgation {}
 .next-posts {}
@@ -286,24 +285,31 @@ ol.commentlist li.thread-odd {}
 		#page-wrap {width: 100%; margin: 0}
 	.post {width: 100%}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0;}
+	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
+
 
 	.menu-mainmenu-container {display: none;}
 	.hideMenu {display: block}
 
 	body {margin-top: -30px}
 	#container { width: 100%}
-	#header {background: url(none);}
+	#header {background: url(none); padding: 8px 0}
 	.specialNav {text-align: left;}
 	.specialNav ul li {display: block; width: 100%; text-align: center;}
 	#headerLogo {width: 100%; background: url(images/enzo_logo.png) no-repeat center center;}
+
+	#headerStore, #headerGethere, #headerCurrentspecials, #headerFacebook {background: none}
+	#headerCurrentspecials, #headerGethere, #headerStore {text-indent: 0; float: left; margin: 24px 0 0 0; background:#cba782; height: 29px; width: 33.33%; font: 14px/10px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #704426; line-height: 30px; padding: 0 }
+	#headerCurrentspecials:hover, #headerGethere:hover, #headerStore:hover {color: #904426}
+
 	.emailLink {display: none;}
 
 	.mobileCircle {
 		cursor: pointer;
-		display: block; margin: 0 auto -35px auto; width: 80px; padding: 30px 0; background: #d64639; border-radius: 50%;
-		text-align: center; vertical-align: middle; font: 18px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #b3382e}
+		display: block; margin: 0 auto -26px auto; width: 73px; padding: 30px 0 21px 0; background: #d64639; border-radius: 50%;
+		text-align: center; vertical-align: middle; font: 19px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #b3382e}
 	.cowSide {display: none}
-	#sLabel {display: none}
+	#sLabel {display: none; color: #d64639}
 
 }	
 @media screen and (max-device-width: 480px) {
