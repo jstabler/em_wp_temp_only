@@ -78,8 +78,8 @@
 	<!-- Uncomment to use; use thoughtfully!
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	-->
-	
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
+	    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 	<!-- This is the traditional favicon.
 		 - size: 16x16 or 32x32
 		 - transparency is OK
@@ -99,6 +99,7 @@
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
@@ -116,11 +117,11 @@
 			<div class="specialNav">
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/"><h1 id="headerLogo"><?php bloginfo('name'); ?></h1></a></li>
-				<li>Store Hours</li>
-				<li>How to get Here</li>
-				<li>Current Specials</li>
-				<li>Facebook</li>
-				<li>Twitter</li>
+				<li><a href="<?php echo get_option('storehours'); ?>/"><h1 id="headerStore"><?php bloginfo('name'); ?></h1></a></li>
+				<li><a href="<?php echo get_option('howtogethere'); ?>/"><h1 id="headerGethere"><?php bloginfo('name'); ?></h1></a></li>
+				<li><a href="<?php echo get_option('currentspecials'); ?>/"><h1 id="headerCurrentspecials"><?php bloginfo('name'); ?></h1></a></li>
+				<li><a href="<?php echo get_option('facebook'); ?>/"><h1 id="headerFacebook"><?php bloginfo('name'); ?></h1></a></li>
+				<li></li>
 			</ul>
 			<!--div class="description"><?php bloginfo('description'); ?></div-->
 			</div>
