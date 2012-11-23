@@ -209,10 +209,19 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
 .cowSide { height: 146px; background: url(images/sidebar_redcow.png) no-repeat 35px 0; }
 #footer {position: relative;
-	background:#a1815e; height: 200px; margin: 250px 0;
+	background:#a1815e; height: 200px; margin: 250px 0 0 0;
 	text-transform: uppercase; color: #816448; text-align:center; 
 	}
- #footer-content { position: absolute; bottom: 10px; text-align: center; margin: 0; width: 100% }
+#footer-content { /*position: absolute; bottom: 10px;*/ text-align: center; margin: 25px auto; width: 850px;
+ 	}
+#footer ul {margin: 0 auto; width: 850px; vertical-align: middle;}
+#footer ul li {float: left; vertical-align: middle; border-right: solid 1px #816448; margin: 2px; height: 85px}
+#footer ul li:last-child {border-right: none}
+#footerLogo {background: url(images/footerLogo.png) no-repeat; width: 192px; height: 55px; text-indent: -9999px}
+#footer-content p small {margin: 0}
+#footer hr {background: #816448}
+#footerT { background: url(images/footerTwitter.png) no-repeat; text-indent: -9999px; display: block; width: 28px; height: 28px}
+#footerFB { background: url(images/footerFacebook.png) no-repeat; text-indent: -9999px; display: block; width: 28px; height: 28px}
 
 .navgation {}
 .next-posts {}
