@@ -160,11 +160,16 @@ body {background: #3e322b url(images/background.png);}
 #page-wrap {width: 970px; margin: 0 auto; background: #fafaf1;}
 #container {width: 850px; margin: 0 auto;}
 #header {background: #fafaf1 url('images/header_bg.png'); height: 186px; margin: 0; padding: 8px 8px}
-#headerLogo {background: url(images/enzo_logo.png) no-repeat; width:242px; height:69px;text-indent: -9999px}
-#headerStore {background: url(images/storehours.png) no-repeat; width:110px; height:70px;text-indent: -9999px}
-#headerGethere {background: url(images/get_here.png) no-repeat; width:125px; height:75px;text-indent: -9999px}
-#headerCurrentspecials {background: url(images/current_specials.png) no-repeat; width:140px; height:50px;text-indent: -9999px}
-#headerFacebook {background: url(images/facebook_twitter.png) no-repeat; width:110px; height:50px;text-indent: -9999px}
+#headerLogo {background: url(images/enzo_logo.png) no-repeat; width:242px; height:69px;text-indent: -9999px; margin-right: 20px}
+#headerStore {background: url(images/storehours.png) no-repeat -7px 0; width:103px; height:70px;text-indent: -9999px; margin: 0 10px;}
+#headerGethere {background: url(images/get_here.png) no-repeat; width:125px; height:75px;text-indent: -9999px; margin: 0 10px}
+#headerCurrentspecials {background: url(images/current_specials.png) 0 16px no-repeat; width:140px; height:75px;text-indent: -9999px; margin: 0 10px}
+#headerFacebook {background: url(images/facebook.png) no-repeat; width:110px; height:39px;text-indent: -9999px; margin: 0 0 0 10px; padding:0;}
+#headerTwitter {background: url(images/twitter.png) 4px 0 no-repeat; width:110px; height:10px;text-indent: -9999px; margin: 0 0 0 10px; padding: 0}
+
+.specialNav { height: 100px; margin-top: 100px}
+.specialNav ul li {display: inline-block; border-right: solid #cca880 1px; vertical-align: middle;}
+.specialNav ul li:last-child {border-right: none}
 
 
 .menuLink, .menuLink a {
@@ -174,12 +179,12 @@ body {background: #3e322b url(images/background.png);}
 .menuLink a:hover { color:#000;}
 .emailLink {
 	background: url(images/icon_email.png); width: 75px; height: 68px;
-	text-indent: -9999px; float: right; margin: 33px -99px 0 0}
-.specialNav { height: 100px; margin-top: 100px}
-.specialNav ul li {display: inline-block}
-.post, .searchPage { /*background:#cca880;*/  width:573px; float: left; margin: 5px; color:#554a43}
+	text-indent: -9999px; float: right; margin: 33px -99px -1px 0}
+
+hr {background: #cca880; border:none; padding: 0; margin: 0 0 16px}
+.post, .searchPage { /*background:#cca880;*/  width:580px; float: left; margin: 5px -20px 5px 25px; color:#554a43}
 .entry {margin: 18px}
-h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px}
+h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px 13px 18px}
 
 .entry-content {}
 .entry-content a {}
@@ -194,9 +199,11 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .menu li ul {margin-top: 13px}
 .menu li ul li {margin: 2px}
 .menu a {color:#fafaf1; text-decoration: none; text-transform:uppercase;} 
+.mlVert {border-right: solid #cca880 1px; padding: 1px; margin: 0px -11px 60px -4px}
+
 .mobileCircle {display: none;}
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
-.cowSide { height: 280px; background: url(images/sidebar_redcow.png) no-repeat 31px 50px; }
+.cowSide { height: 146px; background: url(images/sidebar_redcow.png) no-repeat 35px 0; }
 #footer {position: relative;
 	background:#a1815e; height: 200px; margin: 250px 0;
 	text-transform: uppercase; color: #816448; text-align:center; 
@@ -283,12 +290,13 @@ ol.commentlist li.thread-odd {}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
 {
 		#page-wrap {width: 100%; margin: 0}
-	.post {width: 100%}
+	.post, .searchPage {width: 100%; margin: 0}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0;}
 	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
 
 
 	.menu-mainmenu-container {display: none;}
+	.mlVert {margin: 0; padding:0;}
 	.hideMenu {display: block}
 
 	body {margin-top: -30px}
@@ -306,10 +314,11 @@ ol.commentlist li.thread-odd {}
 
 	.mobileCircle {
 		cursor: pointer;
-		display: block; margin: 0 auto -26px auto; width: 73px; padding: 30px 0 21px 0; background: #d64639; border-radius: 50%;
+		display: block; margin: -15px auto -26px auto; width: 73px; padding: 30px 0 21px 0; background: #d64639; border-radius: 50%;
 		text-align: center; vertical-align: middle; font: 19px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #b3382e}
 	.cowSide {display: none}
 	#sLabel {display: none; color: #d64639}
+	ol {padding-left: 8px}
 
 }	
 @media screen and (max-device-width: 480px) {

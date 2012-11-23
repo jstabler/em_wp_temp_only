@@ -117,12 +117,12 @@
 			<div class="specialNav">
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/"><h1 id="headerLogo"><?php bloginfo('name'); ?></h1></a></li>
-                <!--a href="images/navbar.png"></a-->
 				<li><a href="<?php echo get_option('store-hours'); ?>/"><h1 id="headerStore">Hours</h1></a></li>
 				<li><a href="<?php echo get_option('howtogethere'); ?>/"><h1 id="headerGethere">Directions</h1></a></li>
 				<li><a href="<?php echo get_option('currentspecials'); ?>/"><h1 id="headerCurrentspecials">Specials</h1></a></li>
-				<li><a href="<?php echo get_option('facebook'); ?>/"><h1 id="headerFacebook">Facebook</h1></a></li>
-				<li></li>
+				<li><a href="<?php echo get_option('facebook'); ?>/"><h1 id="headerFacebook">Facebook</h1></a>
+					<a href="#"><h1 id="headerTwitter">Twitter</h1></a>
+				</li>
 			</ul>
 			<!--div class="description"><?php bloginfo('description'); ?></div-->
 			</div>
