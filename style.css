@@ -196,6 +196,10 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 #sidebar {background: #d64639 url('images/sidebar_bottom.png') no-repeat center bottom; width: 260px; float: left; margin: 5px 0 0 0;}
 .menu {  text-align: center; color:#fafaf1; margin: 25px 5px; font-size: 20px;}
 .menu li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px}
+.menu > li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px;
+		 background: url(images/menuBar.png) center 32px no-repeat; padding-bottom: 17px;}
+.menu > li:last-child {background: none; padding-bottom: 5px}
+
 .menu li ul {margin-top: 13px}
 .menu li ul li {margin: 2px}
 .menu a {color:#fafaf1; text-decoration: none; text-transform:uppercase;} 
@@ -296,6 +300,7 @@ ol.commentlist li.thread-odd {}
 
 
 	.menu-mainmenu-container {display: none;}
+	.menu > li:last-child {padding-bottom: 0}
 	.mlVert {margin: 0; padding:0;}
 	.hideMenu {display: block}
 
