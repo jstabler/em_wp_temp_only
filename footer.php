@@ -3,20 +3,21 @@
 		<div id="footer">
 <br/>
 
-  <ul>
-    <hr>
+  <ul class="ulBorder">
     <li id="footerLogo"><a href="#">Enzo's Market</a></li>
-    <li>801 Main Street | Chattanooga, TN 37403 | Store 423.267.1801 | Fax 423.267.1802</li>
-    <li>
+    <li><p>801 Main Street | Chattanooga, TN 37403 | Store 423.267.1801 | Fax 423.267.1802</p></li>
+    <li class="lastUL">
       <a href="#" id="footerT">Twitter</a>
       <a href="#" id="footerFB">Facebook</a>
-    </li>
-    <br clear="all"/>
-    <hr>
-  <ul>
-  <div id="footer-content">
-    <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | All Rights Reserved.</small></div>
-</div>
+        </li>  <br clear="all" /> 
+
+  </ul>
+
+  
+    <div id="footer-content">
+    <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | All Rights Reserved.</small>
+    </div>
+  </div>
         
         
         
