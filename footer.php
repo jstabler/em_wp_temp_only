@@ -5,7 +5,7 @@
 
   <ul class="ulBorder">
     <li id="footerLogo"><a href="#">Enzo's Market</a></li>
-    <li><p>801 Main Street | Chattanooga, TN 37403 | Store 423.267.1801 | Fax 423.267.1802</p></li>
+    <li><p>801 Main Street | Chattanooga, TN 37403<span> | Store 423.267.1801 | Fax 423.267.1802</span></p></li>
     <li class="lastUL">
       <a href="#" id="footerT">Twitter</a>
       <a href="#" id="footerFB">Facebook</a>
