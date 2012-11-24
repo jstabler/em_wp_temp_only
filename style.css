@@ -202,7 +202,8 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 
 .menu li ul {margin-top: 13px}
 .menu li ul li {margin: 2px}
-.menu a {color:#fafaf1; text-decoration: none; text-transform:uppercase;} 
+.menu a {color:#fafaf1; text-decoration: none; text-transform:uppercase;}
+.sub-menu a:hover {color:white;}
 .mlVert {border-right: solid #cca880 1px; padding: 1px; margin: 0px -11px 60px -4px}
 
 .mobileCircle {display: none;}
@@ -279,7 +280,13 @@ ol.commentlist li.thread-alt {}
 ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}
 
-
+/* Animations */
+#page-wrap, #searchform div, .menuLink, .menu a {
+	transition: all .25s linear;
+   -o-transition: all .25s linear;
+   -moz-transition: all .25s linear;
+   -webkit-transition: all .25s linear
+}
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
@@ -303,7 +310,8 @@ ol.commentlist li.thread-odd {}
 	}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
 {
-		#page-wrap {width: 100%; margin: 0}
+
+	#page-wrap {width: 100%; margin: 0}
 	.post, .searchPage {width: 100%; margin: 0}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0;}
 	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
@@ -344,8 +352,6 @@ ol.commentlist li.thread-odd {}
 	#footer li#footerLogo {display: none}
 	#footer .lastUL { }
 	#footer .lastUL a { display: inline-block; margin: 12px 0 0 0}
-
-
 }	
 @media screen and (max-device-width: 480px) {
 
