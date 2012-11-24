@@ -3,5 +3,9 @@ Todo List:
 	x add footer text and logo
 	x add lines under each main nav text
 	x correct mobile version of footer
+	- adjust spacing in full version footer
+	- create css for middle size version
+	- create css for print version
+	- clean up code
 	- Add content
 	- Cross Browser Testing

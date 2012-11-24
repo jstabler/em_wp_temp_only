@@ -132,8 +132,8 @@ a {color: #03f;}
 a:hover {color: #cca880;}
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+::-moz-selection{background: #554a43; color: #fff; text-shadow: none;}
+::selection {background: #554a43; color: #fff; text-shadow: none;} 
 
 /*	j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;} 
@@ -232,6 +232,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 		background: url(images/icon_search.png) 0 1px no-repeat; padding: 0 0 0 18px; color: #b3382e;
 		text-transform: uppercase; height: 20px; cursor: pointer;
 	}
+#searchform div:hover {color:#CCA880}
 #sLabel { margin: 2px; float: left;}
 #searchform { float: left;}	
 #s { margin-left: 4px; cursor: default;}
