@@ -112,8 +112,8 @@
 <div id="container">
 		<header id="header">
 			<?php get_search_form(); ?>
-			<a href="#" class="menuLink">Download Cafe Menu</a>
-			<a href="#" class="emailLink">Email Us</a>
+			<a href="#" class="menuLink">Contact Us</a>
+			<a href="#" class="emailLink">Cafe Menu</a>
 			<div class="specialNav">
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/"><h1 id="headerLogo"><?php bloginfo('name'); ?></h1></a></li>
