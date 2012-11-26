@@ -317,10 +317,16 @@ ol.commentlist li.thread-odd {}
 	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
 
 
-	.menu-mainmenu-container {display: none;}
+	.menu-mainmenu-container { display: none}
+	.showMenu { display: block}
+
+	/*.menu-mainmenu-container { }
+	.mlVert {height: 0; overflow: hidden;}
+	.hideMenu { height: auto;}*/
+
 	.menu > li:last-child {padding-bottom: 0}
 	.mlVert {margin: 0; padding:0;}
-	.hideMenu {display: block}
+	
 
 	body {margin-top: -30px}
 	#container { width: 100%}

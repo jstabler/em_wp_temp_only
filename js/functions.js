@@ -14,34 +14,7 @@ $("#menu-mainmenu li a").click(function(e){
         }
     });
 
-/*  $('#menu-mainmenu ul li a').click(
-    function() {
-      var checkElement = $(this).next();
-      if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-        return false;
-        }
-      if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-		$(this).parent().siblings("li:has(ul)").find("ul").slideUp('normal');      	      	
-        $('#nav-main ul ul li ul:visible').slideUp('normal');
-        checkElement.slideDown('normal');
-        return false;
-        }
-      }
-    );
-  $('#menu-mainmenu ul ul li a').click(
-    function() {
-      var checkElement = $(this).next();
-      if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-        return false;
-        }
-      if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-        $('#menu-mainmenu ul ul').slideUp('normal');    
-        $('#menu-mainmenu ul ul li ul:visible').slideUp('normal');
-        checkElement.slideDown('normal');
-        return false;
-        }
-      }
-    );	*/
+// -- Search Field
   var searchField = '#s'
   var formLabel = 'form div label'
   $('form div').click(
@@ -56,17 +29,29 @@ $("#menu-mainmenu li a").click(function(e){
   		$('#s').hide();
   	});
   $('#s').hide();
-  
+
+// -- Mobile Menu
+// var mobileMenu = $('.menu-mainmenu-container')
+//   $('div .mobileCircle').click(
+//     function() {
+//       if ($(mobileMenu).hasClass('hideMenu')) {
+//         $(mobileMenu).removeClass('hideMenu');
+//       }
+//       else {
+//         $(mobileMenu).removeAttr('style');
+//         $(mobileMenu).addClass('hideMenu');
+//       }
+//     });
+
 var mobileMenu = $('.menu-mainmenu-container')
   $('div .mobileCircle').click(
-    function() {
-      if ($(mobileMenu).hasClass('hideMenu')) {
-        $(mobileMenu).removeAttr('style');
-        $(mobileMenu).removeClass('hideMenu');
+      function() {
+        if ($(window).width() < 580 /*&& $(mobileMenu).hasClass('showMenu')*/) {
+        $(mobileMenu).slideToggle(900);
+        $(mobileMenu).addClass('showMenu');
       }
       else {
-        $(mobileMenu).removeAttr('style');
-        $(mobileMenu).addClass('hideMenu');
+        $(mobileMenu).addClass('showMenu');
+        $(mobileMenu).slideToggle(900);
       }
     });
-  $(mobileMenu).removeAttr('style');
