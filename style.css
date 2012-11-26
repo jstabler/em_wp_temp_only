@@ -181,7 +181,7 @@ body {background: #3e322b url(images/background.png);}
 	background: url(images/icon_menu.png); width: 75px; height: 68px;
 	text-indent: -9999px; float: right; margin: 33px -55px -1px 0}
 
-hr {background: #cca880; border:none; padding: 0; margin: 0 0 16px}
+hr {background: #cca880; border:none; padding: 0; margin: 10px 0 16px}
 .post, .searchPage { /*background:#cca880;*/  width:580px; float: left; margin: 5px -20px 5px 25px; color:#554a43}
 .entry {margin: 18px}
 h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px 13px 18px}
@@ -192,7 +192,6 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 
 #meta {}
 .postmetadata {}
-
 #sidebar {background: #d64639 url('images/sidebar_bottom.png') no-repeat center bottom; width: 260px; float: left; margin: 5px 0 0 0;}
 .menu {  text-align: center; color:#fafaf1; margin: 25px 5px; font-size: 20px;}
 .menu li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px}
