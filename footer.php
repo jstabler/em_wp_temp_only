@@ -7,8 +7,8 @@
     <li id="footerLogo"><a href="#">Enzo's Market</a></li>
     <li><p>801 Main Street | Chattanooga, TN 37403<span> | Store 423.267.1801 | Fax 423.267.1802</span></p></li>
     <li class="lastUL">
-      <a href="http://twitter.com/EnzosMarket" id="footerT">Twitter</a>
-      <a href="https://www.facebook.com/enzosmarkets" id="footerFB">Facebook</a>
+      <a href="http://twitter.com/EnzosMarket"target="_blank" id="footerT">Twitter</a>
+      <a href="https://www.facebook.com/enzosmarkets"target="_blank" id="footerFB">Facebook</a>
         </li>  <br clear="all" /> 
 
   </ul>
