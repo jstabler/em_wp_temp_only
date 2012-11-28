@@ -300,7 +300,7 @@ ol.commentlist li.thread-odd {}
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 510px) {
 
 	/* ensure #nav is visible on desktop version */
 	.menu-mainmenu-container {
