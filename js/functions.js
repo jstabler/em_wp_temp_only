@@ -5,7 +5,7 @@
   $('#menu-mainmenu li.current-menu-item').parents().show();
   // makes menu show on homepage, but not in subs in mobile view
   $(document).ready(function() {
-    if($('body.home').length > 0) {
+    if($(('body.home, body.page-id-264, body.page-id-192')).length > 0) {
         console.log('i am home');
 }
     else { $('.menu-mainmenu-container').toggle(); console.log('menu hide');}
