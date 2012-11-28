@@ -2,7 +2,7 @@
   // This makes sure that all the sub menus are open when applicable
   //$('#menu-mainmenu li.current-menu-item').children().show();
   // This keeps the nav open to the item that you are navigating to.
-  //$('#menu-mainmenu li.current-menu-item').parents().show(); 
+  $('#menu-mainmenu li.current-menu-item').parents().show(); 
  
 $("#menu-mainmenu li a").click(function(e){
         if( $(this).parent().children('ul').length > 0 ){

@@ -172,12 +172,12 @@ body {background: #3e322b url(images/background.png);}
 .specialNav ul li:last-child {border-right: none}
 
 
-.menuLink, .menuLink a {
+.contactLink, .contactLink a {
 	font: 10px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color:#b3382e;
 	float: right; margin: 2px;
 	}
-.menuLink a:hover { color:#000;}
-.emailLink {
+.contactLink a:hover { color:#000;}
+.menuLink {
 	background: url(images/icon_menu.png); width: 75px; height: 68px;
 	text-indent: -9999px; float: right; margin: 33px -55px -1px 0}
 
