@@ -2,7 +2,9 @@
   // This makes sure that all the sub menus are open when applicable
   // $('#menu-mainmenu li.current-menu-item').children().show();
   // This keeps the nav open to the item that you are navigating to.
-  $('#menu-mainmenu li.current-menu-item').parents().show(); 
+  $('#menu-mainmenu li.current-menu-item').parents().show();
+  // makes menu show on homepage, but not in subs in mobile view
+  //$('.menu-mainmenu-container').toggle();
  
 $("#menu-mainmenu li a").click(function(e){
         if( $(this).parent().children('ul').length > 0 ){
@@ -30,16 +32,16 @@ $("#menu-mainmenu li a").click(function(e){
   	});
   $('#s').hide();
 
-// -- Mobile Menu
+//-- Mobile Menu
 // var mobileMenu = $('.menu-mainmenu-container')
 //   $('div .mobileCircle').click(
 //     function() {
-//       if ($(mobileMenu).hasClass('hideMenu')) {
-//         $(mobileMenu).removeClass('hideMenu');
+//       if ($(mobileMenu).hasClass('showMenu')) {
+//         $(mobileMenu).removeClass('showMenu', 900, 'easeOutBounce');
 //       }
 //       else {
 //         $(mobileMenu).removeAttr('style');
-//         $(mobileMenu).addClass('hideMenu');
+//         $(mobileMenu).addClass('showMenu', 900, 'easeOutBounce');
 //       }
 //     });
 

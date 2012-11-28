@@ -172,16 +172,16 @@ body {background: #3e322b url(images/background.png);}
 .specialNav ul li:last-child {border-right: none}
 
 
-.menuLink, .menuLink a {
+.contactLink, .contactLink a {
 	font: 10px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color:#b3382e;
 	float: right; margin: 2px;
 	}
-.menuLink a:hover { color:#000;}
-.emailLink {
-	background: url(images/icon_email.png); width: 75px; height: 68px;
-	text-indent: -9999px; float: right; margin: 33px -99px -1px 0}
+.contactLink a:hover { color:#000;}
+.menuLink {
+	background: url(images/icon_menu.png); width: 75px; height: 68px;
+	text-indent: -9999px; float: right; margin: 33px -55px -1px 0}
 
-hr {background: #cca880; border:none; padding: 0; margin: 0 0 16px}
+hr {background: #cca880; border:none; padding: 0; margin: 10px 0 16px}
 .post, .searchPage { /*background:#cca880;*/  width:580px; float: left; margin: 5px -20px 5px 25px; color:#554a43}
 .entry {margin: 18px}
 h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px 13px 18px}
@@ -192,7 +192,6 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 
 #meta {}
 .postmetadata {}
-
 #sidebar {background: #d64639 url('images/sidebar_bottom.png') no-repeat center bottom; width: 260px; float: left; margin: 5px 0 0 0;}
 .menu {  text-align: center; color:#fafaf1; margin: 25px 5px; font-size: 20px;}
 .menu li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px}
@@ -301,11 +300,20 @@ ol.commentlist li.thread-odd {}
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 
+@media screen and (min-width: 600px) {
+
+	/* ensure #nav is visible on desktop version */
+	.menu-mainmenu-container {
+		display: block !important;
+	}
+
+}
+
 @media (min-device-width:1024px) and (max-width:989px),
        screen and (max-device-width:480px),
 			 (max-device-width:480px) and (orientation:landscape),
        (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) 
-{
+{ 
 
 	}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
@@ -313,11 +321,11 @@ ol.commentlist li.thread-odd {}
 
 	#page-wrap {width: 100%; margin: 0}
 	.post, .searchPage {width: 100%; margin: 0}
-	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0;}
+	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0; z-index: 2}
 	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
 
 
-	.menu-mainmenu-container { display: none}
+	.menu-mainmenu-container { display: none }
 	.showMenu { display: block}
 
 	/*.menu-mainmenu-container { }
@@ -339,7 +347,7 @@ ol.commentlist li.thread-odd {}
 	#headerCurrentspecials, #headerGethere, #headerStore {text-indent: 0; float: left; margin: 24px 0 0 0; background:#cba782; height: 29px; width: 33.33%; font: 14px/10px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #704426; line-height: 30px; padding: 0 }
 	#headerCurrentspecials:hover, #headerGethere:hover, #headerStore:hover {color: #904426}
 
-	.emailLink {display: none;}
+	.menuLink {display: none;}
 
 	.mobileCircle {
 		cursor: pointer;
