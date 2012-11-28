@@ -3,6 +3,7 @@ Todo List:
 	x add footer text and logo
 	x add lines under each main nav text
 	x correct mobile version of footer
+	- Fix 404 stlying
 	- consolidate images into sprites
 	- adjust spacing in full version footer
 	- create css for middle size version
