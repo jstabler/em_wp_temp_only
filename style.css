@@ -303,7 +303,7 @@ ol.commentlist li.thread-odd {}
 @media screen and (min-width: 510px) {
 
 	/* ensure #nav is visible on desktop version */
-	.menu-mainmenu-container {
+	.mlVert {
 		display: block !important;
 	}
 
