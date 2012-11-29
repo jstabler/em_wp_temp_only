@@ -41,7 +41,7 @@ blockquote:after,
 q:before, 
 q:after {content: ''; content: none;}
 
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; }
 
 del {text-decoration: line-through;}
 
@@ -137,6 +137,8 @@ a:hover {color: #cca880;}
 
 /*	j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;} 
+.entry a {color: #cca880;}
+.entry a:hover {color: #d64639;}
 
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
@@ -338,7 +340,7 @@ ol.commentlist li.thread-odd {}
 	#headerCurrentspecials, #headerGethere, #headerStore {text-indent: 0; float: left; margin: 24px 0 0 0; background:#cba782; height: 29px; width: 33.33%; font: 14px/10px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #704426; line-height: 30px; padding: 0 }
 	#headerCurrentspecials:hover, #headerGethere:hover, #headerStore:hover {color: #904426}
 
-	.emailLink {display: none;}
+	.menuLink {display: none;}
 
 	.mobileCircle {
 		cursor: pointer;
