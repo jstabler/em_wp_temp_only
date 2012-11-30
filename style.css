@@ -197,7 +197,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .menu {  text-align: center; color:#fafaf1; margin: 25px 5px; font-size: 20px;}
 .menu li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px}
 .menu > li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px;
-		 background: url(images/menuBar.png) center 32px no-repeat; padding-bottom: 17px;}
+		 background: url(images/menubar.png) center 32px no-repeat; padding-bottom: 17px;}
 .menu > li:last-child {background: none; padding-bottom: 5px}
 
 .menu li ul {margin-top: 13px}
