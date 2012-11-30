@@ -328,7 +328,8 @@ ol.commentlist li.thread-odd {}
 
 
 	/*.menu-mainmenu-container { display: none }*/
-	.showMenu { display: block}
+	#sidebar { display: block;}
+	.showMenu {position: absolute !important}
 
 	/*.menu-mainmenu-container { }
 	.mlVert {height: 0; overflow: hidden;}

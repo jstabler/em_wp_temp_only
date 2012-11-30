@@ -53,12 +53,14 @@ $("#menu-mainmenu li a").click(function(e){
 var mobileMenu = $('.mlVert')
   $('div .mobileCircle').click(
       function() {
-        if ($(window).width() < 580 /*&& $(mobileMenu).hasClass('showMenu')*/) {
+        if ($('#sidebar').hasClass('showMenu')) {
         $(mobileMenu).slideToggle(600);
-        $(mobileMenu).addClass('showMenu');
+        $('#sidebar, #searchform div').removeClass('showMenu');
+        console.log('absolute');
       }
       else {
-        $(mobileMenu).addClass('showMenu');
         $(mobileMenu).slideToggle(600);
+        $('#sidebar, #searchform div').addClass('showMenu');
+        console.log('fixed');
       }
     });
