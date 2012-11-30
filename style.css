@@ -324,7 +324,6 @@ ol.commentlist li.thread-odd {}
 	}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
 {
-
 	body, #page-wrap, #container, .post, .searchPage, #footer, .ulBorder {width: 100%; margin: 0}
 	.post, .searchPage {width: 100%; margin: 0}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0; z-index: 2}
@@ -341,18 +340,18 @@ ol.commentlist li.thread-odd {}
 	.hideMenu { height: auto;}*/
 
 	.menu > li:last-child {padding-bottom: 0}
-	#mobileMenuLogo {background: url(images/enzologo_redmobile.jpg); width: 200px; height: 57px; margin: 15px auto 10px auto; display: block; text-indent: -9999px}
-	.mlVert {margin: 0; padding:0; display: none;}
+	#mobileMenuLogo {background: url(images/enzologo_redmobile.jpg); width: 200px; height: 57px; padding: 0; margin: 15px auto 10px auto; display: block; text-indent: -9999px}
+	.mlVert {margin: 0; padding:0; width: 100%; display: none; border: none}
 	
 
 	body {margin-top: -30px}
 	#container { width: 100%}
 	#header {background: url(none); padding: 8px 0}
-	.specialNav {text-align: left; width: 100%;}
-	.specialNav ul li {display: block; width: 100%; text-align: center;}
+	.specialNav {text-align: left;}
+	.specialNav ul li {display: block; width: 100%; text-align: center; border: none; padding: none}
 	#headerLogo {width: 100%; background: url(images/enzo_logo.png) no-repeat center center;}
 
-	#headerStore, #headerGethere, #headerCurrentspecials, #headerFacebook {background: none}
+	#headerStore, #headerGethere, #headerCurrentspecials, #headerFacebook, #headerTwitter {background: none;}
 	#headerCurrentspecials, #headerGethere, #headerStore {text-indent: 0; float: left; margin: 24px 0 0 0; background:#cba782; height: 29px; width: 33.33%; font: 14px/10px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #704426; line-height: 30px; padding: 0 }
 	#headerCurrentspecials:hover, #headerGethere:hover, #headerStore:hover {color: #904426}
 
@@ -368,7 +367,7 @@ ol.commentlist li.thread-odd {}
 
 	#footer { margin: 50px 0 0 0; height: 150px; text-align: center;}
 	#footer ul {width: 100%; text-align: center; border:none; padding: 0; margin: 0}
-	#footer ul li { height: 30px; border:none; float: none; width:96%; margin: 0 auto}
+	#footer ul li { height: 30px; border:none; float: none; width:94%; margin: 0 auto}
 	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px;}
 	#footer span {}
 	#footer-content { width: 100%; margin: 0}
