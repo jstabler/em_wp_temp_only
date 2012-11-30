@@ -58,7 +58,7 @@
 		         echo ' - page '. $paged; }
 		   ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
-	
+	<meta name="viewport" content="width=device-width" />
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	

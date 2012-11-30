@@ -320,11 +320,11 @@ ol.commentlist li.thread-odd {}
 	}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
 {
-
-	#page-wrap {width: 100%; margin: 0}
+	body, #page-wrap, #container, .post, .searchPage, #footer, .ulBorder {width: 100%; margin: 0} {width: 100%; margin: 0}
 	.post, .searchPage {width: 100%; margin: 0}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0; z-index: 2}
 	#searchform div { position: fixed; z-index: 10; margin: 32px 0 0 20px}
+	.sub-menu, .sub-menu a {font: 16px Arial, sans-serif;}
 
 
 	/*.menu-mainmenu-container { display: none }*/
@@ -362,8 +362,8 @@ ol.commentlist li.thread-odd {}
 
 	#footer { margin: 50px 0 0 0; height: 150px; text-align: center;}
 	#footer ul {width: 100%; text-align: center; border:none; padding: 0; margin: 0}
-	#footer ul li { height: 30px; border:none; float: none; width: 330px; margin: 0 auto}
-	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px}
+	#footer ul li { height: 30px; border:none; float: none; width:96%; margin: 0 auto}
+	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px;}
 	#footer span {}
 	#footer-content { width: 100%; margin: 0}
 	#footer li#footerLogo {display: none}
