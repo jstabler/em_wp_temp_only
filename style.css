@@ -237,6 +237,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 #searchform { float: left;}	
 #s { margin-left: 4px; cursor: default;}
 #searchsubmt {}
+p {margin: 8px 0}
 
 ol.commentlist {list-style: none;}
 ol.commentlist li {}
@@ -323,7 +324,7 @@ ol.commentlist li.thread-odd {}
 	#page-wrap {width: 100%; margin: 0}
 	.post, .searchPage {width: 100%; margin: 0}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0; z-index: 2}
-	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
+	#searchform div { position: fixed; z-index: 10; margin: 32px 0 0 20px}
 
 
 	/*.menu-mainmenu-container { display: none }*/
