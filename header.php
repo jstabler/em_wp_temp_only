@@ -120,7 +120,7 @@
 				<li><a href="http://www.enzos.dev/store-hours/"<?php echo get_option('store-hours'); ?>/"><h1 id="headerStore">Hours</h1></a></li>
 				<li><a href="http://www.enzos.dev/directions/"<?php echo get_option('howtogethere'); ?>/"><h1 id="headerGethere">Directions</h1></a></li>
 				<li><a href="<?php echo get_option('currentspecials'); ?>/"><h1 id="headerCurrentspecials">Specials</h1></a></li>
-				<li><a href="https://www.facebook.com/enzosmarkets"target="_blank"<?php echo get_option('facebook'); ?>/"> <h1 id="headerFacebook">Facebook</h1></a>
+				<li class="no_border"><a href="https://www.facebook.com/enzosmarkets"target="_blank"<?php echo get_option('facebook'); ?>/"> <h1 id="headerFacebook">Facebook</h1></a>
 					<a href="http://twitter.com/EnzosMarket"target="_blank"><h1 id="headerTwitter">Twitter</h1></a>
 				</li>
 			</ul>

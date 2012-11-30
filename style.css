@@ -143,7 +143,7 @@ ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
 
-
+html.ie7 .specialNav ul li.no_border { display: none}
 /* And here begins the Wordpress fun.
 -------------------------------------------------------------------------------*/
 @font-face {
@@ -168,8 +168,9 @@ body {background: #3e322b url(images/background.png);}
 #headerTwitter {background: url(images/twitter.png) 4px 0 no-repeat; width:110px; height:10px;text-indent: -9999px; margin: 0 0 0 10px; padding: 0}
 
 .specialNav { height: 100px; margin-top: 100px}
-.specialNav ul li {display: inline-block; border-right: solid #cca880 1px; vertical-align: middle;}
-.specialNav ul li:last-child {border-right: none}
+.specialNav ul li {display: inline-block; border-right: solid #cca880 1px; vertical-align: middle; zoom: 1;
+*display: inline;*float: none;}
+.specialNav ul li:last-child, .no_border {border-right: none}
 
 
 .contactLink, .contactLink a {
@@ -205,7 +206,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .sub-menu a:hover {color:white;}
 .mlVert {border-right: solid #cca880 1px; padding: 1px; margin: 0px -11px 60px -4px}
 
-.mobileCircle {display: none;}
+.mobileCircle, #mobileMenuLogo {display: none;}
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
 .cowSide { height: 146px; background: url(images/sidebar_redcow.png) no-repeat 35px 0; }
 #footer {position: relative;
@@ -287,6 +288,8 @@ ol.commentlist li.thread-odd {}
    -moz-transition: all .25s linear;
    -webkit-transition: all .25s linear
 }
+
+
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
