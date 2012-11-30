@@ -304,7 +304,7 @@ ol.commentlist li.thread-odd {}
 @media screen and (min-width: 510px) {
 
 	/* ensure #nav is visible on desktop version */
-	.mlVert {
+	.mlVert, #sidebar {
 		display: block !important;
 	}
 	#mobileMenuLogo {display: none}
@@ -328,7 +328,7 @@ ol.commentlist li.thread-odd {}
 
 
 	/*.menu-mainmenu-container { display: none }*/
-	#sidebar { display: block;}
+	#sidebar { display: block; width: 100%}
 	.showMenu {position: absolute !important}
 
 	/*.menu-mainmenu-container { }

@@ -54,13 +54,15 @@ var mobileMenu = $('.mlVert')
   $('div .mobileCircle').click(
       function() {
         if ($('#sidebar').hasClass('showMenu')) {
-        $(mobileMenu).slideToggle(600);
+        
         $('#sidebar, #searchform div').removeClass('showMenu');
+        $(mobileMenu).slideToggle(600);
         console.log('absolute');
       }
       else {
-        $(mobileMenu).slideToggle(600);
+        
         $('#sidebar, #searchform div').addClass('showMenu');
+        $(mobileMenu).slideToggle(600);
         console.log('fixed');
       }
     });
