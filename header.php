@@ -117,15 +117,15 @@
 			<a href="http://www.enzosmarket.com/test/coming-soon/" class="menuLink">Cafe Menu</a>
 			<div class="specialNav">
 			<ul>
-				<li><a href="<?php echo get_option('home'); ?>/"><h1 id="headerLogo"><?php bloginfo('name'); ?></h1></a></li>
+				<li><a href="<?php echo get_option('home'); ?>/" id="headerLogo"><h1 ><?php bloginfo('name'); ?></h1></a></li>
 				<span id="mobilenav">
-				<li><a href="store-hours/"><h1 id="headerStore">Hours</h1></a></li>
-				<li><a href="directions/"><h1 id="headerGethere">Directions</h1></a></li>
-				<li><a href="http://www.enzosmarket.com/test/coming-soon/"><h1 id="headerCurrentspecials">Specials</h1></a></li>
+				<li><a href="store-hours/" id="headerStore">Hours</a></li>
+				<li><a href="directions/" id="headerGethere">Directions</a></li>
+				<li><a href="http://www.enzosmarket.com/test/coming-soon/" id="headerCurrentspecials">Specials</a></li>
 				</span>
 				<li class="no_border">
-					<a href="https://www.facebook.com/enzosmarkets" target="_blank"><h1 id="headerFacebook">Facebook</h1></a>
-					<a href="http://twitter.com/EnzosMarket" target="_blank"><h1 id="headerTwitter">Twitter</h1></a>
+					<a href="https://www.facebook.com/enzosmarkets" target="_blank" id="headerFacebook">Facebook</a>
+					<a href="http://twitter.com/EnzosMarket" target="_blank" id="headerTwitter">Twitter</a>
 				</li>
 			</ul>
 			</div>
