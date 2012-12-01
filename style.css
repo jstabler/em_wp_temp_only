@@ -128,21 +128,22 @@ body {font: 13px Helmet, Freesans, sans-serif;}
 /* we like off-black for text */
 body, select, input, textarea {color: #333;}
 
-a {color: #03f;}
-a:hover {color: #cca880;}
+a {color: #cca880;}
+a:hover {color: #d64639}
+#header a:hover {color: #cca880;}
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #554a43; color: #fff; text-shadow: none;}
 ::selection {background: #554a43; color: #fff; text-shadow: none;} 
 
 /*	j.mp/webkit-tap-highlight-color */
-a:link {-webkit-tap-highlight-color: #fcd700;} 
+a:link {-webkit-tap-highlight-color: rgba(161, 129, 94, .25);} 
 
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
 
-
+html.ie7 .specialNav ul li.no_border { display:none} /* hide twitter/facebook for ie7 until we fix positioning issue*/
 /* And here begins the Wordpress fun.
 -------------------------------------------------------------------------------*/
 @font-face {
@@ -154,7 +155,6 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
          url('fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 body {background: #3e322b url(images/background.png);}
 #page-wrap {width: 970px; margin: 0 auto; background: #fafaf1;}
@@ -168,36 +168,37 @@ body {background: #3e322b url(images/background.png);}
 #headerTwitter {background: url(images/twitter.png) 4px 0 no-repeat; width:110px; height:10px;text-indent: -9999px; margin: 0 0 0 10px; padding: 0}
 
 .specialNav { height: 100px; margin-top: 100px}
-.specialNav ul li {display: inline-block; border-right: solid #cca880 1px; vertical-align: middle;}
-.specialNav ul li:last-child {border-right: none}
+.specialNav ul li {display: inline-block; border-right: solid #cca880 1px; vertical-align: middle; zoom: 1;
+*display: inline;*float: none;}
+.specialNav ul li:last-child, .no_border {border-right: none}
+#googlemap {width: 85%; height: auto; }
 
-
-.menuLink, .menuLink a {
+.contactLink, .contactLink a {
 	font: 10px/12px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color:#b3382e;
 	float: right; margin: 2px;
 	}
-.menuLink a:hover { color:#000;}
-.emailLink {
-	background: url(images/icon_email.png); width: 75px; height: 68px;
-	text-indent: -9999px; float: right; margin: 33px -99px -1px 0}
+.contactLink a:hover { color:#000;}
+.menuLink {
+	background: url(images/icon_menu.png); width: 75px; height: 68px;
+	text-indent: -9999px; float: right; margin: 33px -55px -1px 0}
 
-hr {background: #cca880; border:none; padding: 0; margin: 0 0 16px}
+hr {background: #cca880; border:none; padding: 0; margin: 10px 0 16px}
+.search hr {margin: 10px 18px 16px 18px;}
 .post, .searchPage { /*background:#cca880;*/  width:580px; float: left; margin: 5px -20px 5px 25px; color:#554a43}
 .entry {margin: 18px}
 h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px 13px 18px}
 
 .entry-content {}
-.entry-content a {}
-.entry-content a:hover {}
+.entry a { color: #cca880;}
+.entry a:hover {color: #d64639;}
 
 #meta {}
 .postmetadata {}
-
 #sidebar {background: #d64639 url('images/sidebar_bottom.png') no-repeat center bottom; width: 260px; float: left; margin: 5px 0 0 0;}
 .menu {  text-align: center; color:#fafaf1; margin: 25px 5px; font-size: 20px;}
 .menu li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px}
 .menu > li {font: 19px/22px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; margin: 15px;
-		 background: url(images/menuBar.png) center 32px no-repeat; padding-bottom: 17px;}
+		 background: url(images/menubar.png) center 32px no-repeat; padding-bottom: 17px;}
 .menu > li:last-child {background: none; padding-bottom: 5px}
 
 .menu li ul {margin-top: 13px}
@@ -206,7 +207,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 .sub-menu a:hover {color:white;}
 .mlVert {border-right: solid #cca880 1px; padding: 1px; margin: 0px -11px 60px -4px}
 
-.mobileCircle {display: none;}
+.mobileCircle, #mobileMenuLogo {display: none;}
 .sub-menu, .sub-menu a { color:#902c20; font: 13px Arial, sans-serif; letter-spacing: 0; text-transform: capitalize}
 .cowSide { height: 146px; background: url(images/sidebar_redcow.png) no-repeat 35px 0; }
 #footer {position: relative;
@@ -238,6 +239,8 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 #searchform { float: left;}	
 #s { margin-left: 4px; cursor: default;}
 #searchsubmt {}
+
+p {margin: 8px 0}
 
 ol.commentlist {list-style: none;}
 ol.commentlist li {}
@@ -287,6 +290,8 @@ ol.commentlist li.thread-odd {}
    -moz-transition: all .25s linear;
    -webkit-transition: all .25s linear
 }
+
+
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
@@ -301,45 +306,58 @@ ol.commentlist li.thread-odd {}
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 
+@media screen and (min-width: 510px) {
+
+	/* ensure #nav is visible on desktop version */
+	.mlVert, #sidebar {
+		display: block !important;
+	}
+	#mobileMenuLogo {display: none}
+
+}
+
 @media (min-device-width:1024px) and (max-width:989px),
        screen and (max-device-width:480px),
 			 (max-device-width:480px) and (orientation:landscape),
        (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) 
-{
+{ 
 
 	}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
 {
 
-	#page-wrap {width: 100%; margin: 0}
-	.post, .searchPage {width: 100%; margin: 0}
-	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0;}
-	#searchform div { position: relative; z-index: 10; margin: 32px 0 0 20px}
+
+	body, #page-wrap, #container, .post, .searchPage, #footer, .ulBorder {width: 100%; margin: 0}
+	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0; z-index: 2}
+	#searchform div { position: fixed; z-index: 10; margin: 32px 0 0 20px}
+	.sub-menu, .sub-menu a {font: 16px Arial, sans-serif;}
 
 
-	.menu-mainmenu-container { display: none}
-	.showMenu { display: block}
+	/*.menu-mainmenu-container { display: none }*/
+	#sidebar { display: block; width: 100%}
+	.showMenu {position: absolute !important}
 
 	/*.menu-mainmenu-container { }
 	.mlVert {height: 0; overflow: hidden;}
 	.hideMenu { height: auto;}*/
 
 	.menu > li:last-child {padding-bottom: 0}
-	.mlVert {margin: 0; padding:0;}
+	#mobileMenuLogo {background: url(images/enzologo_redmobile.jpg); width: 200px; height: 57px; padding: 0; margin: 15px auto 10px auto; display: block; text-indent: -9999px}
+	.mlVert {margin: 0; padding:0; width: 100%; display: none; border: none}
 	
 
 	body {margin-top: -30px}
-	#container { width: 100%}
 	#header {background: url(none); padding: 8px 0}
-	.specialNav {text-align: left;}
-	.specialNav ul li {display: block; width: 100%; text-align: center;}
+	.specialNav {text-align: left; width: 100%; padding: 0;}
+	.specialNav ul li {display: block; width: 100%; text-align: center; border: none; padding: none}
 	#headerLogo {width: 100%; background: url(images/enzo_logo.png) no-repeat center center;}
 
-	#headerStore, #headerGethere, #headerCurrentspecials, #headerFacebook {background: none}
-	#headerCurrentspecials, #headerGethere, #headerStore {text-indent: 0; float: left; margin: 24px 0 0 0; background:#cba782; height: 29px; width: 33.33%; font: 14px/10px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #704426; line-height: 30px; padding: 0 }
+	#headerStore, #headerGethere, #headerCurrentspecials, #headerFacebook, #headerTwitter {background: none;}
+	#headerCurrentspecials, #headerGethere, #headerStore {text-indent: 0; float: left; margin:0; /*background:#cba782*/; height: 29px; width: 33.3%; font: 14px/10px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px; color: #704426; line-height: 30px}
 	#headerCurrentspecials:hover, #headerGethere:hover, #headerStore:hover {color: #904426}
-
-	.emailLink {display: none;}
+	#mobilenav {background: #cba782; width: 100%; height: 29px; margin: 20px 0 10px 0; display: block; clear: both;}
+	.post, .searchPage {margin-top: 17px}
+	.menuLink {display: none;}
 
 	.mobileCircle {
 		cursor: pointer;
@@ -351,13 +369,14 @@ ol.commentlist li.thread-odd {}
 
 	#footer { margin: 50px 0 0 0; height: 150px; text-align: center;}
 	#footer ul {width: 100%; text-align: center; border:none; padding: 0; margin: 0}
-	#footer ul li { height: 30px; border:none; float: none; width: 330px; margin: 0 auto}
-	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px}
+	#footer ul li { height: 30px; border:none; float: none; width:94%; margin: 0 auto}
+	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px;}
 	#footer span {}
 	#footer-content { width: 100%; margin: 0}
 	#footer li#footerLogo {display: none}
 	#footer .lastUL { }
 	#footer .lastUL a { display: inline-block; margin: 12px 0 0 0}
+	.entry img {width: 100%; height: auto}
 }	
 @media screen and (max-device-width: 480px) {
 

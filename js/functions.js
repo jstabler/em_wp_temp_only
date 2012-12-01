@@ -1,8 +1,15 @@
   $('#menu-mainmenu ul.sub-menu').hide();
   // This makes sure that all the sub menus are open when applicable
-  //$('#menu-mainmenu li.current-menu-item').children().show();
+  // $('#menu-mainmenu li.current-menu-item').children().show();
   // This keeps the nav open to the item that you are navigating to.
-  //$('#menu-mainmenu li.current-menu-item').parents().show(); 
+  $('#menu-mainmenu li.current-menu-item').parents().show();
+  // makes menu show on homepage, but not in subs in mobile view
+  $(document).ready(function() {
+    if($(('body.home, body.page-id-264, body.page-id-192, .search, .page-id-368')).length > 0) {
+        console.log('i am home');
+}
+    else { $('.mlVert').toggle(); console.log('menu hide');}
+  });
  
 $("#menu-mainmenu li a").click(function(e){
         if( $(this).parent().children('ul').length > 0 ){
@@ -30,28 +37,32 @@ $("#menu-mainmenu li a").click(function(e){
   	});
   $('#s').hide();
 
-// -- Mobile Menu
+//-- Mobile Menu
 // var mobileMenu = $('.menu-mainmenu-container')
 //   $('div .mobileCircle').click(
 //     function() {
-//       if ($(mobileMenu).hasClass('hideMenu')) {
-//         $(mobileMenu).removeClass('hideMenu');
+//       if ($(mobileMenu).hasClass('showMenu')) {
+//         $(mobileMenu).removeClass('showMenu', 900, 'easeOutBounce');
 //       }
 //       else {
 //         $(mobileMenu).removeAttr('style');
-//         $(mobileMenu).addClass('hideMenu');
+//         $(mobileMenu).addClass('showMenu', 900, 'easeOutBounce');
 //       }
 //     });
 
-var mobileMenu = $('.menu-mainmenu-container')
+var mobileMenu = $('.mlVert')
   $('div .mobileCircle').click(
       function() {
-        if ($(window).width() < 580 /*&& $(mobileMenu).hasClass('showMenu')*/) {
-        $(mobileMenu).slideToggle(900);
-        $(mobileMenu).addClass('showMenu');
+        if ($('#sidebar').hasClass('showMenu')) {
+        
+        $('#sidebar, #searchform div').removeClass('showMenu');
+        $(mobileMenu).slideToggle(600);
+        console.log('absolute');
       }
       else {
-        $(mobileMenu).addClass('showMenu');
-        $(mobileMenu).slideToggle(900);
+        
+        $('#sidebar, #searchform div').addClass('showMenu');
+        $(mobileMenu).slideToggle(600);
+        console.log('fixed');
       }
     });

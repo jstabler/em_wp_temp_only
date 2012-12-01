@@ -1,5 +1,6 @@
 <div id="sidebar">
 	<div class="mlVert">
+		<a href="<?php echo get_option('home'); ?>/" id="mobileMenuLogo">Enzo's Market</a>
 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'depth' => 2, 'menu' => 'mainMenu' ) ); ?>
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
     

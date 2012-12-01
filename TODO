@@ -3,11 +3,15 @@ Todo List:
 	x add footer text and logo
 	x add lines under each main nav text
 	x correct mobile version of footer
+	- Fix 404 stlying
 	- consolidate images into sprites
-	- adjust spacing in full version footer
+	x adjust spacing in full version footer
 	- create css for middle size version
-	- finish css transitions/animations
+	x finish css transitions/animations
 	- create css for print version
 	- clean up code
-	- Add content
+	x Add content
 	- Cross Browser Testing
+	- Google Maps on Contact page needs to be looked at for stlying/baloon being cut off
+	- add images above mobile logo
+	- full version, make home image with text behind
