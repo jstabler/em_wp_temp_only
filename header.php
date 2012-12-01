@@ -59,6 +59,7 @@
 		   ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="viewport" content="width=device-width" />
+	<!--<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" /> this diables zoom if enabled -->
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	
@@ -117,9 +118,11 @@
 			<div class="specialNav">
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/"><h1 id="headerLogo"><?php bloginfo('name'); ?></h1></a></li>
+				<span id="mobilenav">
 				<li><a href="store-hours/"><h1 id="headerStore">Hours</h1></a></li>
 				<li><a href="directions/"><h1 id="headerGethere">Directions</h1></a></li>
 				<li><a href="http://www.enzosmarket.com/test/coming-soon/"><h1 id="headerCurrentspecials">Specials</h1></a></li>
+				</span>
 				<li class="no_border">
 					<a href="https://www.facebook.com/enzosmarkets" target="_blank"><h1 id="headerFacebook">Facebook</h1></a>
 					<a href="http://twitter.com/EnzosMarket" target="_blank"><h1 id="headerTwitter">Twitter</h1></a>

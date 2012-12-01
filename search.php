@@ -5,6 +5,7 @@
 	<?php if (have_posts()) : ?>
 	
 		<h2>Search Results</h2>
+		<hr>
 
 		<!--?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?-->
 
