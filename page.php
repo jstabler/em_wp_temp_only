@@ -4,7 +4,13 @@
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
 
-			<h2><?php the_title(); ?></h2>
+			<h2><?php
+		      if (is_front_page()) {
+		         echo ''; }
+		      else {
+				 the_title(); }
+				?>
+			</h2>
 
 			<!--?php include (TEMPLATEPATH . '/../../../wp-includes/meta.php' ); ?-->
 
