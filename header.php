@@ -18,9 +18,9 @@
 	<meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
 
-	<title>
-		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
+	<title><?php
+		   	  if (is_front_page()) {}
+		      elseif (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
 		         wp_title(''); echo ' Archive - '; }
@@ -40,23 +40,23 @@
 	</title>
 	
 	<meta name="title" content="<?php
+			  if (is_front_page()) {}
 		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+		      	single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		      	wp_title(''); echo ' Archive - '; }
 		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+		      	echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
 		         wp_title(''); echo ' - '; }
 		      elseif (is_404()) {
-		         echo 'Not Found - '; }
+		      	echo 'Not Found - '; }
 		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
+		      	bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
-		          bloginfo('name'); }
+		      	bloginfo('name');}
 		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>">
+		      	echo ' - page '. $paged; }?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="viewport" content="width=device-width" />
 	<!--<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" /> this diables zoom if enabled -->
