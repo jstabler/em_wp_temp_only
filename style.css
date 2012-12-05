@@ -170,7 +170,7 @@ body {background: #3e322b url(images/background.png);}
 .specialNav { height: 100px; margin-top: 100px}
 .specialNav ul li {display: inline-block; border-right: solid #cca880 1px; vertical-align: middle; zoom: 1;
 *display: inline;*float: none;}
-.specialNav ul li:last-child, .no_border {border-right: none}
+.specialNav ul li.no_border {border-right: none}
 #googlemap {width: 85%; height: auto; }
 
 .contactLink, .contactLink a {
