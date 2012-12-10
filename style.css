@@ -215,7 +215,7 @@ h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:
 	text-transform: uppercase; color: #816448; text-align:center; 
 	}
 #footer-content { /*position: absolute; bottom: 10px;*/ text-align: center; margin: 25px auto; width: 850px;}
-#footer ul {margin: 30px auto 40px auto; padding: 5px 0; width: 850px; vertical-align: middle; border-top:solid 1px #816448; border-bottom:solid 1px #816448}
+#footer ul {margin: 30px auto 40px auto; padding: 5px 0; width: 875px; vertical-align: middle; border-top:solid 1px #816448; border-bottom:solid 1px #816448}
 #footer ul li {float: left; vertical-align: middle; border-right: solid 1px #816448; margin: 4px; height: 48px; padding: 8px; display:block;}
 #footer ul li p {margin: 16px 5px 0 0}
 #footer ul li.lastUL {border-right: none}

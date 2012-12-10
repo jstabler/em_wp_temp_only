@@ -27,14 +27,15 @@ $("#menu-mainmenu li a").click(function(e){
 
 // -- Search Field
   var searchField = '#s'
-  var formLabel = 'form div label'
-  $('form div').click(
+  var searchForm = 'form#searchform div'
+  var formLabel = 'form#searchform div label'
+  $(searchForm).click(
   	function() {
   		$('#s').show(900);
   		$(formLabel).hide()
   		$('#s').focus()
   	});
-  $('form div').focusout(
+  $(searchForm).focusout(
   	function() {
   		$(formLabel).show(900)
   		$('#s').hide();
