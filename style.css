@@ -308,7 +308,7 @@ ol.commentlist li.thread-odd {}
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 
-@media screen and (min-width: 510px) {
+@media screen and (min-width: 509px), (max-device-width:480px) and (orientation:landscape)  {
 
 	/* ensure #nav is visible on desktop version */
 	.mlVert, #sidebar {
@@ -328,10 +328,11 @@ ol.commentlist li.thread-odd {}
 @media (min-device-width:1024px) and (max-width:509px),(max-device-width:480px) and (orientation:portrait)
 {
 
-
+	input[type='text'],input[type='number'],textarea, #s, #mce-EMAIL {font-size:16px;}
 	body, #page-wrap, #container, .post, .searchPage, #footer, .ulBorder {width: 100%; margin: 0}
 	#sidebar {width: 100%; background: none #d64639; margin:0; position: fixed; top: 0; z-index: 2}
 	#searchform div { position: fixed; z-index: 10; margin: 32px 0 0 20px}
+	#s {margin-top: -5px}
 	.sub-menu, .sub-menu a {font: 16px Arial, sans-serif;}
 
 
@@ -369,18 +370,20 @@ ol.commentlist li.thread-odd {}
 	.cowSide {display: none}
 	#sLabel {display: none; color: #d64639}
 	ol {padding-left: 8px}
+	.post > h2, .searchPage > h2 { margin-left: 8px}
 
 	#footer { margin: 50px 0 0 0; height: 150px; text-align: center;}
 	#footer ul {width: 100%; text-align: center; border:none; padding: 0; margin: 0}
 	#footer ul li { height: 30px; border:none; float: none; width:94%; margin: 0 auto}
-	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px;}
-	#footer span {}
+	#footer ul li p {margin:0; border-top:solid 1px; border-bottom: solid 1px; padding: 5px; font-size: 12px}
+	#footer span { display: block;}
 	#footer-content { width: 100%; margin: 0}
 	#footer li#footerLogo {display: none}
 	#footer .lastUL { }
 	#footer .lastUL a { display: inline-block; margin: 12px 0 0 0}
 	.entry img {width: 100%; height: auto}
 	.mobileHide {display: none;}
+	iframe, #googlemap {width: 100%}
 }	
 @media screen and (max-device-width: 480px) {
 

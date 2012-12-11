@@ -1,11 +1,10 @@
-
 </div>
-		<div id="footer">
+    <div id="footer">
 <br/>
 
   <ul class="ulBorder">
     <li id="footerLogo"><a href="#">Enzo's Market</a></li>
-    <li><p>801 Main Street | Chattanooga, TN 37403<span> | Store 423.xxx.xxxx | Fax 423.xxx.xxxx</span></p></li>
+    <li><p>1501 Long Street | Chattanooga, TN 37408 |<span> Store 423.xxx.xxxx | Fax 423.xxx.xxxx</span></p></li>
     <li class="lastUL">
       <a href="http://twitter.com/EnzosMarket"target="_blank" id="footerT">Twitter</a>
       <a href="https://www.facebook.com/enzosmarkets"target="_blank" id="footerFB">Facebook</a>
@@ -23,9 +22,9 @@
         
         
   
-	</div>
+  </div>
 
-	<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
 
 
 <!-- here comes the javascript -->
@@ -37,8 +36,8 @@
 
 
 <!-- Asynchronous google analytics; this is the official snippet.
-	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+   Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+   
 <script>
 
   var _gaq = _gaq || [];
