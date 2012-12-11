@@ -187,7 +187,9 @@ hr {background: #cca880; border:none; padding: 0; margin: 10px 0 16px}
 .post, .searchPage { /*background:#cca880;*/  width:580px; float: left; margin: 5px -20px 5px 25px; color:#554a43}
 .entry {margin: 18px}
 h2 {font: 24px/26px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43; margin: 23px 18px 13px 18px}
-
+.post h1, .searchPage h1 {margin: 5px 0 18px 0; font: 26px/28px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43;}
+.post h2, .searchPage h2 {margin: 5px 0 15px 0}
+.post h3, .searchPage h3 {margin: 5px 0 10px 0; font: 18px/20px 'BebasRegular', Arial, sans-serif;letter-spacing: 1px;color:#554a43;}
 .entry-content {}
 .entry a { color: #cca880;}
 .entry a:hover {color: #d64639;}
