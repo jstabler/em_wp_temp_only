@@ -4,7 +4,7 @@
 
   <ul class="ulBorder">
     <li id="footerLogo"><a href="#">Enzo's Market</a></li>
-    <li><p>1501 Long Street | Chattanooga, TN 37408 |<span> Store 423.xxx.xxxx | Fax 423.xxx.xxxx</span></p></li>
+    <li><p>1501 Long Street | Chattanooga, TN 37408 |<span> Store 423.486.9312 | Fax 423.486.9314</span></p></li>
     <li class="lastUL">
       <a href="http://twitter.com/EnzosMarket"target="_blank" id="footerT">Twitter</a>
       <a href="https://www.facebook.com/enzosmarkets"target="_blank" id="footerFB">Facebook</a>
@@ -14,7 +14,7 @@
 
   
     <div id="footer-content">
-    <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | All Rights Reserved.</small>
+    <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | <span>All Rights Reserved. | <a href="/test/privacy-policy/">Privacy Policy</a></span></small>
     </div>
   </div>
         
