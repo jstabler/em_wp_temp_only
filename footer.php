@@ -14,7 +14,7 @@
 
   
     <div id="footer-content">
-    <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | All Rights Reserved. | <a href="http://www.enzosmarket.com/test/privacy-policy/">Privacy Policy</a></small>
+    <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> | <span>All Rights Reserved. | <a href="/test/privacy-policy/">Privacy Policy</a></span></small>
     </div>
   </div>
         
