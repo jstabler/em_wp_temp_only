@@ -40,23 +40,23 @@
 	</title>
 	
 	<meta name="title" content="<?php
-			  if (is_front_page()) {}
 		      if (function_exists('is_tag') && is_tag()) {
-		      	single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		      	wp_title(''); echo ' Archive - '; }
+		         wp_title(''); echo ' Archive - '; }
 		      elseif (is_search()) {
-		      	echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
 		         wp_title(''); echo ' - '; }
 		      elseif (is_404()) {
-		      	echo 'Not Found - '; }
+		         echo 'Not Found - '; }
 		      if (is_home()) {
-		      	bloginfo('name'); echo ' - '; bloginfo('description'); }
+		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
-		      	bloginfo('name');}
+		          bloginfo('name'); }
 		      if ($paged>1) {
-		      	echo ' - page '. $paged; }?>">
+		         echo ' - page '. $paged; }
+		   ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="viewport" content="width=device-width" />
 	<!--<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" /> this diables zoom if enabled -->
@@ -114,14 +114,14 @@
 		<header id="header">
 			<?php get_search_form(); ?>
 			<a href="contact/" class="contactLink">Contact Us</a>
-			<a href="http://www.enzosmarket.com/test/coming-soon/" class="menuLink">Cafe Menu</a>
+			<a href="coming-soon/" class="menuLink">Cafe Menu</a>
 			<div class="specialNav">
 			<ul>
 				<li><a href="<?php echo get_option('home'); ?>/" id="headerLogo"><h1 ><?php bloginfo('name'); ?></h1></a></li>
 				<span id="mobilenav">
 				<li><a href="store-hours/" id="headerStore">Hours</a></li>
 				<li><a href="directions/" id="headerGethere">Directions</a></li>
-				<li><a href="http://www.enzosmarket.com/test/coming-soon/" id="headerCurrentspecials">Specials</a></li>
+				<li><a href="http://www.enzosmarket.com/coming-soon/" id="headerCurrentspecials">Specials</a></li>
 				</span>
 				<li class="no_border">
 					<a href="https://www.facebook.com/enzosmarkets" target="_blank" id="headerFacebook">Facebook</a>
